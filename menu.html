@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffce35">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="La carta de PANCHOS. Consultá productos y precios.">
+    <title>La carta | PANCHOS.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <script src="productos.js" defer></script>
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <a class="skip" href="#carta">Ir al menú</a>
+    <header class="header" id="inicio">
+        <div class="wrap header-inner">
+            <a class="brand" href="#inicio" aria-label="PANCHOS, inicio">PANCHOS<span>.</span></a>
+            <span class="header-note">STREET FOOD CLUB <b>✳</b></span>
+        </div>
+    </header>
+    <main class="wrap">
+        <section class="welcome" aria-labelledby="title">
+            <div class="welcome-copy">
+                <p class="eyebrow"><i></i> CARTA DIGITAL</p>
+                <h1 id="title">¿Qué se te<br>antoja<span>?</span></h1>
+                <p>Elegí tu favorito y pedilo en el local.</p>
+            </div>
+            <div class="welcome-art" aria-hidden="true">
+                <div id="hero-art"></div>
+                <span class="sticker">EL ANTOJO<br>MANDA!</span>
+                <span class="star">✳</span>
+            </div>
+        </section>
+        <nav class="navigation" aria-label="Categorías de la carta">
+            <div id="categories" class="categories"></div>
+        </nav>
+        <section id="carta" class="menu" aria-labelledby="menu-title">
+            <div class="menu-heading">
+                <h2 id="menu-title">La carta<span>.</span></h2>
+                <p>Precios en ARS</p>
+            </div>
+            <div id="products"></div>
+            <noscript>Activá JavaScript para consultar los productos.</noscript>
+        </section>
+        <aside class="closing"><span aria-hidden="true">✳</span><p>Bien cargados. Sin vueltas.</p><a href="#inicio" aria-label="Volver arriba">↑</a></aside>
+    </main>
+    <footer class="wrap footer">
+        <span>Menú conceptual · Precios de ejemplo · Imágenes ilustrativas generadas por IA</span>
+        <a href="https://soyfacuh.com" target="_blank" rel="noopener noreferrer">Hecho por <strong>soyfacuh</strong> ↗</a>
+    </footer>
+    <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-title">
+        <div class="photo-panel">
+            <button class="photo-close" type="button" aria-label="Cerrar imagen">×</button>
+            <img alt="" width="225" height="225">
+            <div class="photo-details">
+                <h2 id="photo-title"></h2>
+                <p class="photo-description"></p>
+                <strong class="price photo-price"></strong>
+                <small>Imagen ilustrativa</small>
+            </div>
+        </div>
+    </dialog>
+</body>
+</html>
